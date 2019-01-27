@@ -1,0 +1,29 @@
+{% extends "layout_no_sign_out.html" %}
+
+{% block page_title %}
+Registration
+{% endblock %}
+
+{% block content %}
+
+<main id="content" class="prototype-8" role="main">
+  {% include "includes/phase_banner_beta.html" %}
+
+   <div class="grid-row">
+       <div class="column-two-thirds">
+           <form name="loginForm" class="form" novalidate="" method="post">
+            <h1 class="heading-large">Create an account</h1>
+
+            <p class="lede">Based on the information you've given, you have everything you need to make your application for probate online.</p>
+
+            <p>You now need to create an account to continue your application.</p>
+
+
+            <p><input type="submit" class="button" value="Create your account"></p>
+            <p>Already registered? <a href="/login">Log in</a>.</p>
+        </form>
+        </div>
+   </div>
+</main>
+
+{% endblock %}
